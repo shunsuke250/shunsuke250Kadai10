@@ -13,6 +13,8 @@
 		AB18370F2AC5A588003E55CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB18370D2AC5A588003E55CB /* Main.storyboard */; };
 		AB1837112AC5A589003E55CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1837102AC5A589003E55CB /* Assets.xcassets */; };
 		AB1837142AC5A589003E55CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1837122AC5A589003E55CB /* LaunchScreen.storyboard */; };
+		AB317E8F2AC5A73D00EDC241 /* PrefectureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317E8D2AC5A73D00EDC241 /* PrefectureTableViewCell.swift */; };
+		AB317E902AC5A73D00EDC241 /* PrefectureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB317E8E2AC5A73D00EDC241 /* PrefectureTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AB1837102AC5A589003E55CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB1837132AC5A589003E55CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB1837152AC5A589003E55CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB317E8D2AC5A73D00EDC241 /* PrefectureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureTableViewCell.swift; sourceTree = "<group>"; };
+		AB317E8E2AC5A73D00EDC241 /* PrefectureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrefectureTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				AB1837072AC5A588003E55CB /* AppDelegate.swift */,
 				AB1837092AC5A588003E55CB /* SceneDelegate.swift */,
 				AB18370B2AC5A588003E55CB /* ViewController.swift */,
+				AB317E8D2AC5A73D00EDC241 /* PrefectureTableViewCell.swift */,
+				AB317E8E2AC5A73D00EDC241 /* PrefectureTableViewCell.xib */,
 				AB18370D2AC5A588003E55CB /* Main.storyboard */,
 				AB1837102AC5A589003E55CB /* Assets.xcassets */,
 				AB1837122AC5A589003E55CB /* LaunchScreen.storyboard */,
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB317E902AC5A73D00EDC241 /* PrefectureTableViewCell.xib in Resources */,
 				AB1837142AC5A589003E55CB /* LaunchScreen.storyboard in Resources */,
 				AB1837112AC5A589003E55CB /* Assets.xcassets in Resources */,
 				AB18370F2AC5A588003E55CB /* Main.storyboard in Resources */,
@@ -138,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB317E8F2AC5A73D00EDC241 /* PrefectureTableViewCell.swift in Sources */,
 				AB18370C2AC5A588003E55CB /* ViewController.swift in Sources */,
 				AB1837082AC5A588003E55CB /* AppDelegate.swift in Sources */,
 				AB18370A2AC5A588003E55CB /* SceneDelegate.swift in Sources */,
