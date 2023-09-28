@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
-    
+
     let prefectures: [String] = [
         "北海道","青森県","岩手県","宮城県","秋田県","山形県","福島県",
         "茨城県","栃木県","群馬県","埼玉県","千葉県","東京都","神奈川県",
@@ -35,8 +35,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PrefectureTableViewCell
-            cell.prefectureLabel.text = prefectures[indexPath.row]
-            cell.indexDescriptionLabel.text = "\(indexPath.row)番目の都道府県です"
-            return cell
+        cell.prefectureLabel.text = prefectures[indexPath.row]
+        cell.indexDescriptionLabel.text = "\(indexPath.row)番目の都道府県です"
+        if indexPath.row % 3 == 0 {
+            cell.backgroundColor = .red
+        } else if indexPath.row % 3 == 1 {
+            cell.backgroundColor = .green
+        } else {
+            cell.backgroundColor = .blue
+        }
+        return cell
     }
 }
