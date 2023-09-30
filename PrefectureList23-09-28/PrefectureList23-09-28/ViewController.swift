@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "PrefectureTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        tableView.rowHeight = 50
     }
 }
 
