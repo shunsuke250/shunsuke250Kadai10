@@ -32,18 +32,22 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         prefectures.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PrefectureTableViewCell
-        cell.prefectureLabel.text = prefectures[indexPath.row]
-        cell.indexDescriptionLabel.text = "\(indexPath.row)番目の都道府県です"
-        if indexPath.row % 3 == 0 {
-            cell.backgroundColor = .red
-        } else if indexPath.row % 3 == 1 {
-            cell.backgroundColor = .green
-        } else {
-            cell.backgroundColor = .blue
+        if let cell = tableView.dequeueReusableCell(
+            withIdentifier: "cell",
+            for: indexPath) as? PrefectureTableViewCell {
+            cell.prefectureLabel.text = prefectures[indexPath.row]
+            cell.indexDescriptionLabel.text = "\(indexPath.row)番目の都道府県です"
+            if indexPath.row % 3 == 0 {
+                cell.backgroundColor = UIColor(named: "lightRed")
+            } else if indexPath.row % 3 == 1 {
+                cell.backgroundColor = UIColor(named: "lightGreen")
+            } else {
+                cell.backgroundColor = UIColor(named: "lightBlue")
+            }
+            return cell
         }
-        return cell
+        return UITableViewCell()
     }
 }

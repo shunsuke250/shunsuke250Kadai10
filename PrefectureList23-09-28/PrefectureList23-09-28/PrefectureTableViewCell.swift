@@ -8,7 +8,6 @@
 import UIKit
 
 class PrefectureTableViewCell: UITableViewCell {
-
     @IBOutlet weak var prefectureLabel: UILabel!
     @IBOutlet weak var indexDescriptionLabel: UILabel!
 }
