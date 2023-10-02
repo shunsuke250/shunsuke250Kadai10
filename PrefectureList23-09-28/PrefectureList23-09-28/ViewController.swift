@@ -34,7 +34,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         prefectures.count
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(
+        _ tableView: UITableView,
+        cellForRowAt indexPath: IndexPath)
+    -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(
             withIdentifier: "cell",
             for: indexPath) as? PrefectureTableViewCell {
